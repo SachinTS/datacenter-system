@@ -6,7 +6,7 @@ from lib.AppConstants import AppConstants
 
 
 
-def updateServerInfo(a, b, c, d):
+def updateServerInfo(serverID, cpuCore, ram, increase):
     pass
 
 class ResourceManager(object):
