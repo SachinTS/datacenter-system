@@ -39,16 +39,17 @@ def place_this_job(container_type):
     print("This job has been placed in server ", id_server)
     return id_server
 
-sys_time = 82
-print("Sys_time = ", sys_time)
-sys_time = SysTimeInc()
-print("Sys_time = ", sys_time)
-list_waiting_jobs = f_waiting(sys_time)
-
-sys_time = 0
-next_arrival_time = 0
-
 def initiate():
+    sys_time = 82
+    print("Sys_time = ", sys_time)
+    sys_time = SysTimeInc()
+    print("Sys_time = ", sys_time)
+    list_waiting_jobs = f_waiting(sys_time)
+
+    sys_time = 0
+    next_arrival_time = 0
+
+
     print("\n\n------------ Let's begin -----------------\n\nSys_time = ", sys_time)
 
     next_arrival_time = SysTimeInc()
@@ -58,7 +59,7 @@ def initiate():
         list_done_jobs = f_done(sys_time)
         for elt in list_done_jobs:
             print(" --- ", elt)
-            rm.freeResource(elt[0], elt[1])
+            # rm.freeResource(elt[0], elt[1])
 
 
             #AckAllocation(optimalServer(elt),
