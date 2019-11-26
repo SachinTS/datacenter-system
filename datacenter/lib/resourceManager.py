@@ -31,6 +31,8 @@ class ResourceManager(object):
             self.logging.info("decreasing the CPU and RAM for server " + server)
             pass
 
+    def freeResource(self, container, serverID):
+        self.updateServerInfo(serverID, self.container[containerType]['Cores'], self.container[containerType]['RAM'], False)
 
     def optimal_server(self, containerType):
         '''
