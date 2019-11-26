@@ -20,7 +20,7 @@ def fetchAllServer():
         con, c = initialiseDB()
         c.execute("select * from servers")
     except Exception as e:
-        print(str(e))
+        logging.error(str(e))
     data = c.fetchall()
     terminateDB(con)
     logging.info("Returning all servers info")
