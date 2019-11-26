@@ -39,7 +39,7 @@ def updateServerInfo(serverID, cpuCore, ram, increase):
             c.execute(query)
             con.commit()
         except Exception as e:
-            logging.info(str(e))
+            logging.error(str(e))
 
     else:
         try:
@@ -51,7 +51,7 @@ def updateServerInfo(serverID, cpuCore, ram, increase):
             con.commit()
 
         except Exception as e:
-            print(str(e))
+            logging.error(str(e))
     terminateDB(con)
     return
     # c.execute("select * from servers")
