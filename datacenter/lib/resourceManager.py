@@ -1,13 +1,10 @@
 
 from lib.resourceAlogrithm import findOptimalServer
-#from someModule import fetchAllServer, updateServerInfo
+from lib.ServerDB import fetchAllServer, updateServerInfo
 from lib.AppLogger import get_reporting_logger
 from lib.AppConstants import AppConstants
 
 
-
-def updateServerInfo(serverID, cpuCore, ram, increase):
-    pass
 
 class ResourceManager(object):
     '''
@@ -32,7 +29,7 @@ class ResourceManager(object):
             pass
 
     def freeResource(self, container, serverID):
-        self.updateServerInfo(serverID, self.container[containerType]['Cores'], self.container[containerType]['RAM'], False)
+        updateServerInfo(serverID, self.container[container]['Cores'], self.container[container]['RAM'], False)
 
     def optimal_server(self, containerType):
         '''
@@ -43,7 +40,7 @@ class ResourceManager(object):
         '''
         self.logging.info("fetching server info")
         try:
-            serverList = self.fetchAllServer()
+            serverList = self.fetchServer()
             self.logging.info(serverList)
         except Exception as e:
             self.logging.error("Fetching server list failed... :\s( ")
@@ -54,13 +51,14 @@ class ResourceManager(object):
             return None
         elif optimalServer:
             # update CPU and RAM for serverCPULimit
-            self.logging.info("Optimal server found. Returning")
+            self.logging.info("Optimal server found. severid: " + optimalServer )
             # print(ResourceManager.container[containerType]['Cores'])
             self.logging.info("Updating server info in DB")
             updateServerInfo(optimalServer, self.container[containerType]['Cores'], self.container[containerType]['RAM'], True)
             return optimalServer
 
-    def fetchAllServer(self):
+    def fetchServer(self):
+        '''
         serverInfo = {
             0:{"RAM":64,    "Cores":18, "Status":1},
             1:{"RAM":64,    "Cores":18, "Status":1},
@@ -69,4 +67,15 @@ class ResourceManager(object):
             4:{"RAM":0,    "Cores":0,  "Status":0},
             5:{"RAM":0,    "Cores":0,  "Status":0}
             }
+        '''
+        serverInfo = {}
+        serverList = fetchAllServer()
+        for server in serverList:
+            id, hostname, cpu_max, ram_max, ram_used, cpu_used, status = server
+            temp = {}
+            temp["RAM"] = ram_used
+            temp["Cores"] = cpu_used
+            temp["Status"] = status
+            serverInfo[id] = temp
+        self.logging.info("fetched server from DB ")
         return serverInfo

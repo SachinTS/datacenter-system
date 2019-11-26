@@ -1,5 +1,6 @@
 import random
 import unittest
+from lib.AppConstants import AppConstants
 
 # assumptions
 # jobs of type [A,B,C,D]
@@ -40,15 +41,10 @@ def findOptimalServer(job, servers):
 
     # some information known prior
 
-    RAMLimit = 64
-    CPULimit = 18
+    RAMLimit = AppConstants.RAMLimit
+    CPULimit = AppConstants.CPULimit
 
-    types = {
-        "A":{"RAM":4,   "Cores":1},
-        "B":{"RAM":4,   "Cores":2},
-        "C":{"RAM":16,  "Cores":2},
-        "D":{"RAM":32,  "Cores":3}
-    }
+    types = AppConstants.CONTAINER
 
     # parameters:
     # job is a one letter code referring to the type of container being requested
