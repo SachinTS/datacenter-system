@@ -1,0 +1,4 @@
+2019-11-26 18:25:33,092 datacenter.log INFO     controller initiate line:43  Initialization of the variables :
+2019-11-26 18:25:33,093 datacenter.log INFO     controller initiate line:45  -- Sytem time = 0
+2019-11-26 18:25:33,093 datacenter.log INFO     controller initiate line:47  -- There is no next arrival time yet
+2019-11-26 18:25:33,093 datacenter.log INFO     controller initiate line:48  Beginning of the Main Loop 

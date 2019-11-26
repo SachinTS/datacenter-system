@@ -50,13 +50,13 @@ def showall():
     print(data)
 
 
-min__arrival = systimeinc()
-print(min__arrival)
+#min__arrival = systimeinc()
+#print(min__arrival)
 
-result = foreman(90)
-print(result)
+#result = foreman(90)
+#print(result)
 
-showall()
+#showall()
 
 
 c.close()
