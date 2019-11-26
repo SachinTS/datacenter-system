@@ -1,8 +1,9 @@
 # importing sqlite 3 for database operations
 import sqlite3
+#from lib.AppConstants import AppConstants
 
 # creating connection and cursor objects
-con = sqlite3.connect('dataCenter.db')
+con = sqlite3.connect("lib/dataCenter.db")
 c = con.cursor()
 
 
@@ -60,5 +61,3 @@ showall()
 
 c.close()
 con.close()
-
-

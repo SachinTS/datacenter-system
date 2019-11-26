@@ -1,9 +1,10 @@
-from lib.resourceManager import freeResource, optimal_server
+from lib.resourceManager import ResourceManager
+
 from lib.DB_Connect import systimeinc, foreman
-
 from lib.AppLogger import get_reporting_logger
-
 logging = get_reporting_logger()
+
+rm = ResourceManager()
 
 def SysTimeInc():
     #return next arrival_time of waiting job or -1
@@ -33,10 +34,6 @@ def LeastArrTime():
     print("There is no more waiting job, and the nex end_time of processing job is ", 120)
     return 120
 
-def freeResource(id_server, container_type):
-    print("Server ", id_server, " has been released from a ", container_type,"-type container.")
-    return 1
-
 def place_this_job(container_type):
     id_server = 434255
     print("This job has been placed in server ", id_server)
@@ -51,24 +48,25 @@ list_waiting_jobs = f_waiting(sys_time)
 sys_time = 0
 next_arrival_time = 0
 
-print("\n\n------------ Let's begin -----------------\n\nSys_time = ", sys_time)
+def initiate():
+    print("\n\n------------ Let's begin -----------------\n\nSys_time = ", sys_time)
 
-next_arrival_time = SysTimeInc()
+    next_arrival_time = SysTimeInc()
 
-while next_arrival_time != -1:
-    sys_time = next_arrival_time
-    list_done_jobs = f_done(sys_time)
-    for elt in list_done_jobs:
-        print(" --- ", elt)
-        freeResource(elt[0], elt[1])
-
-
-        #AckAllocation(optimalServer(elt),
+    while next_arrival_time != -1:
+        sys_time = next_arrival_time
+        list_done_jobs = f_done(sys_time)
+        for elt in list_done_jobs:
+            print(" --- ", elt)
+            rm.freeResource(elt[0], elt[1])
 
 
-
-    next_arrival_time = -1
+            #AckAllocation(optimalServer(elt),
 
 
 
-   # next_arrival_time = SysTimeInc()
+        next_arrival_time = -1
+
+
+
+       # next_arrival_time = SysTimeInc()
