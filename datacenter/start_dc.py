@@ -2,4 +2,5 @@ from lib.resourceManager import ResourceManager
 
 
 rm = ResourceManager()
-rm.optimal_server("A")
+rm.optimal_server("C")
+rm.freeResource("C", "2")
