@@ -1,7 +1,7 @@
 
 '''
-class for declaring all the contants required by the app.
-This helps in managing contants at one place.
+class for declaring all the constants required by the app.
+This helps in managing constants at one place.
 '''
 
 class AppConstants(object):
