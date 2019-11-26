@@ -13,3 +13,6 @@ class AppConstants(object):
         "C":{"RAM":16,  "Cores":2},
         "D":{"RAM":32,  "Cores":3}
     }
+    DB_FILE = "lib/dataCenter.db"
+    RAMLimit = 64
+    CPULimit = 18

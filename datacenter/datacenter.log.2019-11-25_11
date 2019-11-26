@@ -1,0 +1,38 @@
+2019-11-25 07:46:51,258 datacenter.log INFO     resourceManager optimal_server line:49  fetching server info
+2019-11-25 07:47:02,829 datacenter.log INFO     resourceManager optimal_server line:49  fetching server info
+2019-11-25 07:47:02,829 datacenter.log INFO     resourceManager optimal_server line:51  None
+2019-11-25 07:50:03,382 datacenter.log INFO     resourceManager optimal_server line:49  fetching server info
+2019-11-25 07:50:03,383 datacenter.log INFO     resourceManager optimal_server line:51  {0: {'RAM': 64, 'Cores': 18, 'Status': 1}, 1: {'RAM': 64, 'Cores': 18, 'Status': 1}, 2: {'RAM': 16, 'Cores': 6, 'Status': 1}, 3: {'RAM': 4, 'Cores': 1, 'Status': 1}, 4: {'RAM': 0, 'Cores': 0, 'Status': 0}, 5: {'RAM': 0, 'Cores': 0, 'Status': 0}}
+2019-11-25 07:51:14,623 datacenter.log INFO     resourceManager optimal_server line:49  fetching server info
+2019-11-25 07:51:14,623 datacenter.log INFO     resourceManager optimal_server line:51  {0: {'RAM': 64, 'Cores': 18, 'Status': 1}, 1: {'RAM': 64, 'Cores': 18, 'Status': 1}, 2: {'RAM': 16, 'Cores': 6, 'Status': 1}, 3: {'RAM': 4, 'Cores': 1, 'Status': 1}, 4: {'RAM': 0, 'Cores': 0, 'Status': 0}, 5: {'RAM': 0, 'Cores': 0, 'Status': 0}}
+2019-11-25 07:51:14,624 datacenter.log INFO     resourceManager optimal_server line:58  Optimal server found. Returning
+2019-11-25 07:51:31,524 datacenter.log INFO     resourceManager optimal_server line:49  fetching server info
+2019-11-25 07:51:31,524 datacenter.log INFO     resourceManager optimal_server line:51  {0: {'RAM': 64, 'Cores': 18, 'Status': 1}, 1: {'RAM': 64, 'Cores': 18, 'Status': 1}, 2: {'RAM': 16, 'Cores': 6, 'Status': 1}, 3: {'RAM': 4, 'Cores': 1, 'Status': 1}, 4: {'RAM': 0, 'Cores': 0, 'Status': 0}, 5: {'RAM': 0, 'Cores': 0, 'Status': 0}}
+2019-11-25 07:51:31,524 datacenter.log INFO     resourceManager optimal_server line:58  Optimal server found. Returning
+2019-11-25 07:52:32,389 datacenter.log INFO     resourceManager optimal_server line:49  fetching server info
+2019-11-25 07:52:32,389 datacenter.log INFO     resourceManager optimal_server line:51  {0: {'RAM': 64, 'Cores': 18, 'Status': 1}, 1: {'RAM': 64, 'Cores': 18, 'Status': 1}, 2: {'RAM': 16, 'Cores': 6, 'Status': 1}, 3: {'RAM': 4, 'Cores': 1, 'Status': 1}, 4: {'RAM': 0, 'Cores': 0, 'Status': 0}, 5: {'RAM': 0, 'Cores': 0, 'Status': 0}}
+2019-11-25 07:52:32,390 datacenter.log INFO     resourceManager optimal_server line:58  Optimal server found. Returning
+2019-11-25 07:53:00,899 datacenter.log INFO     resourceManager optimal_server line:49  fetching server info
+2019-11-25 07:53:00,899 datacenter.log INFO     resourceManager optimal_server line:51  {0: {'RAM': 64, 'Cores': 18, 'Status': 1}, 1: {'RAM': 64, 'Cores': 18, 'Status': 1}, 2: {'RAM': 16, 'Cores': 6, 'Status': 1}, 3: {'RAM': 4, 'Cores': 1, 'Status': 1}, 4: {'RAM': 0, 'Cores': 0, 'Status': 0}, 5: {'RAM': 0, 'Cores': 0, 'Status': 0}}
+2019-11-25 07:53:00,899 datacenter.log INFO     resourceManager optimal_server line:58  Optimal server found. Returning
+2019-11-25 07:53:16,738 datacenter.log INFO     resourceManager optimal_server line:49  fetching server info
+2019-11-25 07:53:16,738 datacenter.log INFO     resourceManager optimal_server line:51  {0: {'RAM': 64, 'Cores': 18, 'Status': 1}, 1: {'RAM': 64, 'Cores': 18, 'Status': 1}, 2: {'RAM': 16, 'Cores': 6, 'Status': 1}, 3: {'RAM': 4, 'Cores': 1, 'Status': 1}, 4: {'RAM': 0, 'Cores': 0, 'Status': 0}, 5: {'RAM': 0, 'Cores': 0, 'Status': 0}}
+2019-11-25 07:53:16,738 datacenter.log INFO     resourceManager optimal_server line:58  Optimal server found. Returning
+2019-11-25 07:53:24,741 datacenter.log INFO     resourceManager optimal_server line:49  fetching server info
+2019-11-25 07:53:24,741 datacenter.log INFO     resourceManager optimal_server line:51  {0: {'RAM': 64, 'Cores': 18, 'Status': 1}, 1: {'RAM': 64, 'Cores': 18, 'Status': 1}, 2: {'RAM': 16, 'Cores': 6, 'Status': 1}, 3: {'RAM': 4, 'Cores': 1, 'Status': 1}, 4: {'RAM': 0, 'Cores': 0, 'Status': 0}, 5: {'RAM': 0, 'Cores': 0, 'Status': 0}}
+2019-11-25 07:53:24,741 datacenter.log INFO     resourceManager optimal_server line:58  Optimal server found. Returning
+2019-11-25 07:54:07,014 datacenter.log INFO     resourceManager optimal_server line:49  fetching server info
+2019-11-25 07:54:07,015 datacenter.log INFO     resourceManager optimal_server line:51  {0: {'RAM': 64, 'Cores': 18, 'Status': 1}, 1: {'RAM': 64, 'Cores': 18, 'Status': 1}, 2: {'RAM': 16, 'Cores': 6, 'Status': 1}, 3: {'RAM': 4, 'Cores': 1, 'Status': 1}, 4: {'RAM': 0, 'Cores': 0, 'Status': 0}, 5: {'RAM': 0, 'Cores': 0, 'Status': 0}}
+2019-11-25 07:54:07,015 datacenter.log INFO     resourceManager optimal_server line:58  Optimal server found. Returning
+2019-11-25 07:54:35,905 datacenter.log INFO     resourceManager optimal_server line:49  fetching server info
+2019-11-25 07:54:35,905 datacenter.log INFO     resourceManager optimal_server line:51  {0: {'RAM': 64, 'Cores': 18, 'Status': 1}, 1: {'RAM': 64, 'Cores': 18, 'Status': 1}, 2: {'RAM': 16, 'Cores': 6, 'Status': 1}, 3: {'RAM': 4, 'Cores': 1, 'Status': 1}, 4: {'RAM': 0, 'Cores': 0, 'Status': 0}, 5: {'RAM': 0, 'Cores': 0, 'Status': 0}}
+2019-11-25 07:54:35,906 datacenter.log INFO     resourceManager optimal_server line:58  Optimal server found. Returning
+2019-11-25 07:54:49,383 datacenter.log INFO     resourceManager optimal_server line:49  fetching server info
+2019-11-25 07:54:49,383 datacenter.log INFO     resourceManager optimal_server line:51  {0: {'RAM': 64, 'Cores': 18, 'Status': 1}, 1: {'RAM': 64, 'Cores': 18, 'Status': 1}, 2: {'RAM': 16, 'Cores': 6, 'Status': 1}, 3: {'RAM': 4, 'Cores': 1, 'Status': 1}, 4: {'RAM': 0, 'Cores': 0, 'Status': 0}, 5: {'RAM': 0, 'Cores': 0, 'Status': 0}}
+2019-11-25 07:54:49,383 datacenter.log INFO     resourceManager optimal_server line:58  Optimal server found. Returning
+2019-11-25 07:57:44,425 datacenter.log INFO     resourceManager optimal_server line:42  fetching server info
+2019-11-25 07:57:44,426 datacenter.log INFO     resourceManager optimal_server line:44  {0: {'RAM': 64, 'Cores': 18, 'Status': 1}, 1: {'RAM': 64, 'Cores': 18, 'Status': 1}, 2: {'RAM': 16, 'Cores': 6, 'Status': 1}, 3: {'RAM': 4, 'Cores': 1, 'Status': 1}, 4: {'RAM': 0, 'Cores': 0, 'Status': 0}, 5: {'RAM': 0, 'Cores': 0, 'Status': 0}}
+2019-11-25 07:57:44,426 datacenter.log INFO     resourceManager optimal_server line:51  Optimal server found. Returning
+2019-11-25 07:58:01,871 datacenter.log INFO     resourceManager optimal_server line:42  fetching server info
+2019-11-25 07:58:01,872 datacenter.log INFO     resourceManager optimal_server line:44  {0: {'RAM': 64, 'Cores': 18, 'Status': 1}, 1: {'RAM': 64, 'Cores': 18, 'Status': 1}, 2: {'RAM': 16, 'Cores': 6, 'Status': 1}, 3: {'RAM': 4, 'Cores': 1, 'Status': 1}, 4: {'RAM': 0, 'Cores': 0, 'Status': 0}, 5: {'RAM': 0, 'Cores': 0, 'Status': 0}}
+2019-11-25 07:58:01,872 datacenter.log INFO     resourceManager optimal_server line:51  Optimal server found. Returning
