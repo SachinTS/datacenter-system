@@ -1,7 +1,7 @@
 # importing sqlite 3 for database operations
 import sqlite3
 from lib.AppConstants import AppConstants
-from ServerDB import initialiseDB, terminateDB
+from lib.ServerDB import initialiseDB, terminateDB
 from lib.AppLogger import get_reporting_logger
 
 
