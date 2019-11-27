@@ -1,4 +1,3 @@
-from lib.controller import initiate
+from lib.controller import main
 
-
-rm = initiate()
+main()

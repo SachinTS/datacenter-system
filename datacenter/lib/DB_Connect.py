@@ -57,6 +57,19 @@ def showall():
     con, c = initialiseDB()
     c.execute("select * from jobs")
     data = c.fetchall()
+
+    print(data)
+
+
+#min__arrival = systimeinc()
+#print(min__arrival)
+
+#result = foreman(90)
+#print(result)
+
+#showall()
+
+
     terminateDB(con)
     logging.info(data)
 
