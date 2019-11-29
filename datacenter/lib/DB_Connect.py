@@ -98,6 +98,22 @@ def least_arr_time():
         else:
             return arrival[0]
 
+def least_end_time():
+    con, c = initialiseDB()
+    c.execute("select * from jobs where status = 'PROCESSING'")
+    waiting = c.fetchall()
+
+    if len(waiting) == 0:
+        return None
+    else:
+        c.execute("select min(end_time) from jobs where status = 'PROCESSING'")
+        arrival = c.fetchone()
+        terminateDB(con)
+        if not arrival[0]:
+            return None
+        else:
+            return arrival[0]
+
 
 # foreman function takes system time as an argument
 def foreman(sys_time):
