@@ -65,10 +65,11 @@ def main():
         logging.info(" | Sytem time = %d", sys_time)
         list_done_jobs = fake_foreman_done(sys_time) #--------#
         logging.info(" | There is %d jobs that are now finished", len(list_done_jobs))
-        logging.info("__ Freeing of the Resources __")
-        for elt in list_done_jobs:
-            logging.info(" | --> Server %d can erase a %c-type container", elt[0], elt[1])
-            fake_freeResource(elt[0], elt[1]) #--------#
+        if list_done_jobs:
+            logging.info("__ Freeing of the Resources __")
+            for elt in list_done_jobs:
+                logging.info(" | --> Server %d can erase a %c-type container", elt[0], elt[1])
+                fake_freeResource(elt[0], elt[1]) #--------#
         list_waiting_jobs = fake_foreman_waiting(sys_time) #--------#
         logging.info(" | There is %d jobs to send to servers", len(list_waiting_jobs))
         logging.info("__ Allocation of the jobs __")
