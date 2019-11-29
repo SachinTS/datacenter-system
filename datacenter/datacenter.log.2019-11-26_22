@@ -1,0 +1,46 @@
+2019-11-26 22:00:24,075 datacenter.log INFO     controller main line:54  __ Initialization of the variables __
+2019-11-26 22:00:24,075 datacenter.log INFO     controller main line:56   | Sytem time = 0
+2019-11-26 22:00:24,075 datacenter.log INFO     controller main line:58   | There is no next arrival time yet
+2019-11-26 22:00:24,075 datacenter.log INFO     controller main line:60  __ Entering the Main Loop __
+2019-11-26 22:00:24,075 datacenter.log INFO     controller fake_least_arrival_time line:21   | The next arrival_time of processing job is 85
+2019-11-26 22:00:24,075 datacenter.log INFO     controller main line:62   | First arrival time = 85
+2019-11-26 22:00:24,075 datacenter.log INFO     controller main line:65   | Sytem time = 85
+2019-11-26 22:00:24,075 datacenter.log INFO     controller main line:67   | There is 4 jobs that are now finished
+2019-11-26 22:00:24,075 datacenter.log INFO     controller main line:68  __ Freeing of the Resources __
+2019-11-26 22:00:24,075 datacenter.log INFO     controller main line:70   | --> Server 434275 can erase a A-type container
+2019-11-26 22:00:24,075 datacenter.log INFO     controller fake_freeResource line:15   | <-- Well received : Server 434275 erase a A-type container
+2019-11-26 22:00:24,075 datacenter.log INFO     controller main line:70   | --> Server 434276 can erase a C-type container
+2019-11-26 22:00:24,075 datacenter.log INFO     controller fake_freeResource line:15   | <-- Well received : Server 434276 erase a C-type container
+2019-11-26 22:00:24,075 datacenter.log INFO     controller main line:70   | --> Server 434277 can erase a D-type container
+2019-11-26 22:00:24,075 datacenter.log INFO     controller fake_freeResource line:15   | <-- Well received : Server 434277 erase a D-type container
+2019-11-26 22:00:24,075 datacenter.log INFO     controller main line:70   | --> Server 434278 can erase a C-type container
+2019-11-26 22:00:24,075 datacenter.log INFO     controller fake_freeResource line:15   | <-- Well received : Server 434278 erase a C-type container
+2019-11-26 22:00:24,075 datacenter.log INFO     controller main line:73   | There is 4 jobs to send to servers
+2019-11-26 22:00:24,075 datacenter.log INFO     controller main line:74  __ Allocation of the jobs __
+2019-11-26 22:00:24,075 datacenter.log INFO     controller main line:76   | --> Job 852787 needs a D-type container
+2019-11-26 22:00:24,075 datacenter.log INFO     controller fake_optimal_server line:11   | <-- Well received : D-type container sent to server 2
+2019-11-26 22:00:24,075 datacenter.log INFO     controller main line:79   | <-- Job 852787 has been allocated to server 2
+2019-11-26 22:00:24,075 datacenter.log INFO     controller main line:76   | --> Job 852788 needs a A-type container
+2019-11-26 22:00:24,075 datacenter.log INFO     controller fake_optimal_server line:11   | <-- Well received : A-type container sent to server 3
+2019-11-26 22:00:24,075 datacenter.log INFO     controller main line:79   | <-- Job 852788 has been allocated to server 3
+2019-11-26 22:00:24,075 datacenter.log INFO     controller main line:76   | --> Job 852789 needs a B-type container
+2019-11-26 22:00:24,075 datacenter.log INFO     controller fake_optimal_server line:11   | <-- Well received : B-type container sent to server 7
+2019-11-26 22:00:24,075 datacenter.log INFO     controller main line:79   | <-- Job 852789 has been allocated to server 7
+2019-11-26 22:00:24,075 datacenter.log INFO     controller main line:76   | --> Job 852790 needs a C-type container
+2019-11-26 22:00:24,075 datacenter.log INFO     controller fake_optimal_server line:11   | <-- Well received : C-type container sent to server 8
+2019-11-26 22:00:24,075 datacenter.log INFO     controller main line:79   | <-- Job 852790 has been allocated to server 8
+2019-11-26 22:00:24,075 datacenter.log INFO     controller main line:88   | There is no more waiting jobs
+2019-11-26 22:00:24,075 datacenter.log INFO     controller main line:90  __ Exiting slowly the program __
+2019-11-26 22:00:24,085 datacenter.log INFO     controller fake_least_end_time line:45   | The next end_time of processing job is 120
+2019-11-26 22:00:24,085 datacenter.log INFO     controller main line:92   | Next end time in the table = 120
+2019-11-26 22:00:24,085 datacenter.log INFO     controller main line:95   | Sytem time = 120
+2019-11-26 22:00:24,085 datacenter.log INFO     controller main line:97   | There is 4 jobs that are now finished
+2019-11-26 22:00:24,085 datacenter.log INFO     controller main line:98  __ Freeing of the Resources __
+2019-11-26 22:00:24,085 datacenter.log INFO     controller main line:100   | --> Server 434275 can erase a A-type container
+2019-11-26 22:00:24,085 datacenter.log INFO     controller fake_freeResource line:15   | <-- Well received : Server 434275 erase a A-type container
+2019-11-26 22:00:24,085 datacenter.log INFO     controller main line:100   | --> Server 434276 can erase a C-type container
+2019-11-26 22:00:24,085 datacenter.log INFO     controller fake_freeResource line:15   | <-- Well received : Server 434276 erase a C-type container
+2019-11-26 22:00:24,085 datacenter.log INFO     controller main line:100   | --> Server 434277 can erase a D-type container
+2019-11-26 22:00:24,085 datacenter.log INFO     controller fake_freeResource line:15   | <-- Well received : Server 434277 erase a D-type container
+2019-11-26 22:00:24,085 datacenter.log INFO     controller main line:100   | --> Server 434278 can erase a C-type container
+2019-11-26 22:00:24,085 datacenter.log INFO     controller fake_freeResource line:15   | <-- Well received : Server 434278 erase a C-type container
