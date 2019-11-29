@@ -66,10 +66,13 @@ def foreman_waiting(sys_time):
 
 
 # ack_allocation function takes system time as an argument
-def ack_allocation(job_id, server_id):
+def ack_allocation(job_id, server_id, error=False):
+    if not error:
+        query = "update jobs set server_id ='" + str(server_id) + "', status = 'PROCESSING' where job_id = '" + str(job_id) + "'"
+    else:
+        query = "update jobs set server_id ='" + str(server_id) + "', status = 'ERROR' where job_id = '" + str(job_id) + "'"
     try:
         con, c = initialiseDB()
-        query = "update jobs set server_id ='" + str(server_id) + "', status = 'PROCESSING' where job_id = '" + str(job_id) + "'"
         c.execute(query)
         con.commit()
         terminateDB(con)

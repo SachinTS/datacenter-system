@@ -16,19 +16,10 @@ class ResourceManager(object):
         self.container = AppConstants.CONTAINER
 
 
-    def updateServerInfo(server, cores, ram, increase):
-        '''
-        function to update server RAM and CPU usage
-        '''
-
-        if increase:
-            self.logging.info("increasing the CPU and RAM for server " + server)
-            pass
-        else:
-            self.logging.info("decreasing the CPU and RAM for server " + server)
-            pass
-
     def freeResource(self, container, serverID):
+        '''
+            function to update resource on any server
+        '''
         updateServerInfo(serverID, self.container[container]['Cores'], self.container[container]['RAM'], False)
 
     def optimal_server(self, containerType):
@@ -59,6 +50,7 @@ class ResourceManager(object):
 
     def fetchServer(self):
         '''
+        return all the servers with their info
         serverInfo = {
             0:{"RAM":64,    "Cores":18, "Status":1},
             1:{"RAM":64,    "Cores":18, "Status":1},

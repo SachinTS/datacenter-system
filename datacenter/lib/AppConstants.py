@@ -6,7 +6,7 @@ This helps in managing constants at one place.
 
 class AppConstants(object):
     LOGGING_CONFIG_FILE = "lib/logging_config.ini"
-    LOG_FILE_NAME = "datacenter.log"
+    LOG_FILE_NAME = "logs/datacenter.log"
     CONTAINER = {
         "A":{"RAM":4,   "Cores":1},
         "B":{"RAM":4,   "Cores":2},
