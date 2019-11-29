@@ -1,7 +1,14 @@
 import random
 import unittest
 from lib.AppConstants import AppConstants
+from lib.AppLogger import get_reporting_logger
 
+
+# creating connection and cursor objects
+# con = sqlite3.connect(AppConstants.DB_FILE)
+# c = con.cursor()
+
+logging = get_reporting_logger()
 # assumptions
 # jobs of type [A,B,C,D]
 # servers are stored as dictionaries
@@ -92,6 +99,7 @@ def findOptimalServer(job, servers):
     except:
         if idleServers:
             optimalServer = random.choice([s for s in servers if servers[s]["Status"] == 0])
+            logging.info(" turning on idle server !!!!!!")
         else:
             return(None)
 

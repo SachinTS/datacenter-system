@@ -30,11 +30,11 @@ def fetchAllServer():
 def updateServerInfo(serverID, cpuCore, ram, increase):
     con, c = initialiseDB()
     if increase:
-        logging.info("increasing RAM and CPU for server:" + serverID)
+        logging.info("increasing RAM and CPU for server:" + str(serverID))
         # new_ram =
         try:
             query = "UPDATE servers SET RAM_Used = RAM_Used + "+ str(ram) +" , CPU_Used = CPU_Used + " \
-                     + str(cpuCore) + " WHERE id = " + serverID
+                     + str(cpuCore) + " WHERE id = " + str(serverID)
             logging.info("executing query: " + query)
             c.execute(query)
             con.commit()
@@ -43,9 +43,9 @@ def updateServerInfo(serverID, cpuCore, ram, increase):
 
     else:
         try:
-            logging.info("decreasing RAM and CPU for server:" + serverID)
+            logging.info("decreasing RAM and CPU for server:" + str(serverID))
             query = "UPDATE servers SET RAM_Used = RAM_Used - "+ str(ram) +" , CPU_Used = CPU_Used - " \
-                     + str(cpuCore) + " WHERE id = " + serverID
+                     + str(cpuCore) + " WHERE id = " + str(serverID)
             logging.info("executing query: " + query)
             c.execute(query)
             con.commit()
